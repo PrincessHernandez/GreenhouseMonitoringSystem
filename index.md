@@ -7,6 +7,11 @@ title: Project Blog
 
 # Greenhouse Monitoring System
 
+### Reading Week
+* Meeting
+* Working on the application.
+* Finish up PCB
+
 ### Week 6 February 14, 2019
 * We are a week behind schedule. The application is still in the development and all 3 sensors are working together. We are going to finish soldering the PCB during reading week.
 
