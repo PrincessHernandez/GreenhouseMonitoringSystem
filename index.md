@@ -8,7 +8,7 @@ title: Project Blog
 # Greenhouse Monitoring System
 
 ### Week 6 February 14, 2019
-* We are a week behind schedule. The application is still in the development and all 3 sensors are working together.
+* We are a week behind schedule. The application is still in the development and all 3 sensors are working together. We are going to finish soldering the PCB during reading week.
 
 ### Week 5 February 7, 2019
 * A draft version of our [technical report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Project%20SRS%20draft%20(Week%205)/Project%20SRS%20(draft).docx) is due.
