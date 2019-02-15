@@ -7,6 +7,12 @@ title: Project Blog
 
 # Greenhouse Monitoring System
 
+### Week 5 February 7, 2019
+* A draft version of our [technical report]() is due.
+
+### Week 4 January 31, 2019
+* Our status [report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/tree/master/documentation/Status%20Update%20(Week%204)) is due.
+
 ### Week 3 January 24, 2019
 * This week, we worked on the project's Requirements Specifications.
 * We started the mobile application.
