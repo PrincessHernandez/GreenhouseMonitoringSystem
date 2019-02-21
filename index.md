@@ -19,7 +19,7 @@ title: Project Blog
 * A draft version of our [technical report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Project%20SRS%20draft%20(Week%205)/Project%20SRS%20(draft).docx) is due.
 
 ### Week 4 January 31, 2019
-* Our [status report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/) is due.
+* Our [status report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Status%20Update%20(Week%204)/Project%20Status%20E-mail.pdf) is due.
 
 ### Week 3 January 24, 2019
 * This week, we worked on the project's Requirements Specifications.
