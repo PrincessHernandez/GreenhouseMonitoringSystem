@@ -36,6 +36,8 @@ public class HistoryFragment extends Fragment{
 
     FirebaseDatabase database;
     DatabaseReference ref;
+    String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
     GraphView graphView;
     LineGraphSeries series[] = {new LineGraphSeries(), new LineGraphSeries(), new LineGraphSeries()};
 
@@ -63,7 +65,7 @@ public class HistoryFragment extends Fragment{
         graphView.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.BOTTOM);
 
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference(authData.getUid());
+        ref = database.getReference("Current Data");
 
         graphView.getGridLabelRenderer().setLabelFormatter(new DefaultLabelFormatter()
         {
@@ -101,8 +103,7 @@ public class HistoryFragment extends Fragment{
     @Override
     public void onStart() {
         super.onStart();
-
-        ref.addValueEventListener(new ValueEventListener() {
+        ref.child(userid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 DataPoint[][] dp = new DataPoint[3][(int) dataSnapshot.getChildrenCount()];
