@@ -215,7 +215,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         String id = ref.push().getKey();
         DataValue dataValue = new DataValue(20, 30, 15);
-        ref.child(id).setValue(dataValue);
+        ref.child(userid).child(id).setValue(dataValue);
 
         FirebaseAuth.getInstance().signOut();
         redirectLoginScreen();

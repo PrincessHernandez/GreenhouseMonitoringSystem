@@ -10,7 +10,7 @@ public class DataValue {
     public DataValue() {
     }
 
-    public DataValue(int tempValue,int co2Value,int humiditValue) {
+    public DataValue(int tempValue,int co2Value,int humidityValue) {
         this.tempValue = tempValue;
         //this.vocValue = vocValue;
         this.co2Value = co2Value;

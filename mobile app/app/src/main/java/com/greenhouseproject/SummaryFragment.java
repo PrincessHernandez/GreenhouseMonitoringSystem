@@ -35,9 +35,11 @@ public class SummaryFragment extends Fragment{
     EditText tempVal, co2Val, humidVal;
     Button btnCData;
     FirebaseDatabase database;
-    DatabaseReference ref;
+    DatabaseReference ref, ref2;
 
     FirebaseUser authData = FirebaseAuth.getInstance().getCurrentUser() ;
+
+    String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
     PieChartView pieChartView[] = new PieChartView[3];
     List<SliceValue> pieData[] = new List[3];
@@ -60,6 +62,7 @@ public class SummaryFragment extends Fragment{
         database = FirebaseDatabase.getInstance();
         //ref = database.getReference(authData.getUid());
         ref = database.getReference("Current Data");
+        ref2 = database.getReference(authData.getUid());
 
         pieChartView[0] = myView.findViewById(R.id.chart_temp);
         //pieChartView[1] = myView.findViewById(R.id.chart_voc);
@@ -83,7 +86,7 @@ public class SummaryFragment extends Fragment{
                 int humid = Integer.parseInt(humidVal.getText().toString());
 
                 DataValue dataValue = new DataValue(temp, co2, humid);
-                ref.child(id).setValue(dataValue);
+                ref.child(userid).child(id).setValue(dataValue);
             }
         });
     }
@@ -91,7 +94,7 @@ public class SummaryFragment extends Fragment{
     @Override
     public void onStart() {
         super.onStart();
-        ref.addValueEventListener(new ValueEventListener() {
+        ref.child(userid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
