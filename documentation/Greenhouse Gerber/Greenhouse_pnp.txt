@@ -1,0 +1,25 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Greenhouse
+*Date=18:09:49
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;11.7975;-27.2483;0;Bottom;Via1
+2;;;9.25746;-29.7883;0;Bottom;Via5
+3;;;35.7595;-18.8775;0;Bottom;Raspberry Pi 1
+4;;;4.17746;-34.8683;0;Bottom;Via4
+5;;molex-1x4_lock;21.5765;-31.0583;-90;Bottom;OLED
+6;;;6.71746;-32.3283;0;Bottom;Via2
+7;;;9.30882;-12.0472;180;Bottom;SparkFun_CSS811_Breakout1
+8;;molex-1x4_lock;21.5859;-8.19826;90;Bottom;Temp/Humid
+9;;;1.63746;-29.7883;0;Bottom;Via3
+10;;;48.5936;-20.9687;90;Top;TXT1
