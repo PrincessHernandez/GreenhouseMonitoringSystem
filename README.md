@@ -48,10 +48,7 @@ SparkFun Air Quality Breakout - CCS811                                          
 3. To check if your sensors are functioning, click [here](#i2c-detection).
 
 ### Soldering
-1. Make sure to break the 7 pins from the Break Away Header. Then start by soldering the sensor to the pins of the header. 
-<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/Soldering%20Sensor%20to%20Header.jpg" width="350">
-
-2. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or my version of the [fritzing file](https://github.com/PrincessHernandez/VOC_Sensor/blob/master/documentation/Fritzing%20CCS811/VOC-CCS311-Princess.fzz). You can refer to the image of the schematic and PCB designs below.
+1. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or our version of the [fritzing file](). You can refer to the image of the schematic and PCB designs below.
 <br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_schem.png" width="350"> <img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_pcb.png" width="350">
 <br/>Here are the following pins that you should know for this project:
 ##### Power Pins
