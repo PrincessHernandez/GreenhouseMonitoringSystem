@@ -97,7 +97,9 @@ To wake up AM2315 Temp/Humid sensor, run the command again. It will show all add
 
 ### Reproducible
 
-### Explore with your Sensor
+### Explore with your device
+You are now ready to conduct experiments with your device. \*We highly recommend you test in greenhouses for great results.
+
 AM2315 - Temperature/Humidity
 </br>CCS811 - VOC
 </br>SSD1306 - OLED
