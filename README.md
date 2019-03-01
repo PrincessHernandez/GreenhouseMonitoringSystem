@@ -65,8 +65,11 @@ SparkFun Air Quality Breakout - CCS811                                          
 
 3. Once you have obtained your PCB board solder the following:
 * Vias\*
-* 40-pin socket 
-* 7-pin socket
+
+* 20x2-pin socket 
+
+* 4 and 5-pin sockets
+
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
 
 Once you have finished soldering, your board should look like this along with the sensor:
