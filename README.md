@@ -18,7 +18,7 @@
 ### Introduction
 
 ### System Diagram
-
+![Image of System Diagram]()
 ### Material Requirements
 
 ### Time Commitment
