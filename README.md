@@ -22,12 +22,13 @@ The Greenhouse Monitoring System is a device that allows greenhouse technicians
 ![Image of System Diagram](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Sys%20Diagram.png?raw=true)
 
 ### Material Requirements and Budget
-Description                              |Source      |Part #      |$CAD Price|$USD Price|Link
------------------------------------------|:----------:|:----------:|:--------:|:--------:|------
-SparkFun Air Quality Breakout - CCS811   | Sparkfun   | SEN-14193  |          |          |
-                                         |      X     |            |          |          |
-                                         |      X     |            |          |          |
-                                         |      X     |            |          |          | 
+Description                                           |Source      |Part #      |$CAD Price|$USD Price|Link
+------------------------------------------------------|:----------:|:----------:|:--------:|:--------:|------
+SparkFun Air Quality Breakout - CCS811                | Sparkfun   | SEN-14193  |          | $20.95   | https://www.sparkfun.com/products/14193?_ga=2.97662492.2095878335.1537831851
+
+AM2315 - Encased I2C Temperature/Humidity Sensor      |      X     |            |          |          | https://www.adafruit.com/product/1293
+                                                      |      X     |            |          |          |
+                                                      |      X     |            |          |          | 
 
 ### Time Commitment
 
