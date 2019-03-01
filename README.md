@@ -45,7 +45,7 @@ SparkFun Air Quality Breakout - CCS811                                          
 1. Set your sensors onto your breadboard and connect your sensors to the appropriate GPIO pinout of the Raspberry Pi. The wiring should look something like this:
 <br/><img src="https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Setup.png?raw=true" height="350">
 2. Boot your Raspberry Pi and open terminal.
-3. 
+3. To check if your sensors are functioning, click [here](#i2c-detection).
 
 ### Soldering
 1. Make sure to break the 7 pins from the Break Away Header. Then start by soldering the sensor to the pins of the header. 
