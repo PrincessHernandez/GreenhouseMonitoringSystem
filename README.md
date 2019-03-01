@@ -31,8 +31,7 @@ OLED Display for Arduino 128x64 Pixel I2C, 0.96 inch, SSD1306, Library, 3-5V    
 4-pin Header (Female)                                                           | Creatron   | $0.42    |          | https://www.creatroninc.com/product/4-pin-receptacle-socket/
 AM2315 - Encased I2C Temperature/Humidity Sensor                                | Adafruit   |          | $29.95   | https://www.adafruit.com/product/1293
 SparkFun Air Quality Breakout - CCS811                                          | Sparkfun   |          | $20.95   | https://www.sparkfun.com/products/14193?_ga=2.97662492.2095878335.1537831851
-
-**Does not include tax and shipping.
+**Prices does not include tax and shipping.
                                                        
 ### Time Commitment
 
