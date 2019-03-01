@@ -8,7 +8,7 @@ title: Project Blog
 # Greenhouse Monitoring System
 
 ### Week 7 February 28, 2019
-* Our [status report]() is due.
+* Our [status report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Status%20Updates/Status%20Update%20(Week%207).pdf) is due.
 
 ### Reading Week
 * Group Meeting
