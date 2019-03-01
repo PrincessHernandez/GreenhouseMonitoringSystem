@@ -73,7 +73,7 @@ SparkFun Air Quality Breakout - CCS811                                          
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
 
 Once you have finished soldering, your board should look like this along with the sensor:
-<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/SolderedPCB.PNG" width="350">
+<br/><img src="" height="350">
 
 ### I2C Detection
 To check if the board is functioning and detecting the sensor, open terminal and type
