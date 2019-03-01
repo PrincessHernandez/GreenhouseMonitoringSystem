@@ -48,8 +48,8 @@ SparkFun Air Quality Breakout - CCS811                                          
 3. To check if your sensors are functioning, click [here](#i2c-detection).
 
 ### Soldering
-1. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or our version of the [fritzing file](). You can refer to the image of the schematic and PCB designs below.
-<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_schem.png" width="350"> <img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_pcb.png" width="350">
+1. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or our version of the [fritzing file](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Fritzing/Greenhouse.fzz). You can refer to the image of the schematic and PCB designs below.
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_schem.png" width="350"> <img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_pcb.png" width="350">
 <br/>Here are the following pins that you should know for this project:
 ##### Power Pins
 * Vin - power pin
