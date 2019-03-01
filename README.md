@@ -18,7 +18,8 @@
 ### Introduction
 
 ### System Diagram
-![Image of System Diagram]()
+![Image of System Diagram](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Sys%20Diagram.png?raw=true)
+
 ### Material Requirements
 
 ### Time Commitment
