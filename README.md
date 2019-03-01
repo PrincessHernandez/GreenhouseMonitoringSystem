@@ -35,7 +35,7 @@ SparkFun Air Quality Breakout - CCS811                                          
 \*Prices does not include tax and shipping.
                                                        
 ### Time Commitment
-This project can be completed in approximately 7 days if you followed the mechanical assembly and diagrams. Desired to do so, you must order the materials 2 - 3 weeks before working on this project as shipping takes about 1 - 2 weeks. Once you receive the materials, you can start configuring your Raspberry Pi which will take around 3 hours. Connecting the parts to the Raspberry Pi will take 30 minutes. And then setting up the code on the raspberry pi and testing the code took around a 1 hour. It is recommended that you take 3 - 4 hours working on this project daily.
+This project can be completed in approximately 7 days if you followed the mechanical assembly and diagrams. Desired to do so, you must order the materials 2 - 3 weeks before working on this project as shipping takes about 1 - 2 weeks. Once you receive the materials, you can start configuring your Raspberry Pi which will take around 3 hours. Connecting the parts to the Raspberry Pi will take 30 minutes. And then to set up the code on the Raspberry Pi and testing the code will take around a 1 hour. It is recommended that you take 3 - 4 hours working on this project daily.
 
 ### Raspberry Pi Configuration
 1. Create your Raspberry Pi's [image](https://github.com/six0four/StudentSenseHat/blob/master/cribpisdcard.md) for your project.
