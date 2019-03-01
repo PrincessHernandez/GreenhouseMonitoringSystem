@@ -43,12 +43,9 @@ SparkFun Air Quality Breakout - CCS811                                          
 
 ### Mechanical Assembly
 1. Set your sensors onto your breadboard and connect your sensors to the appropriate GPIO pinout of the Raspberry Pi. The wiring should look something like this:
-![Image of Setup](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Setup.png?raw=true)
-2. 
-3. Boot your Raspberry Pi and open terminal.
-. Next, will be connecting the connector interface to the Raspberry pi 3. While holding the connector interface, align the pins on the Raspberry Pi 3 GPIO header and carefully push down the connector interface board on to the Raspberry Pi 3 board.
-Then, plug in a Grove Cable that comes with the Grove Sunlight sensor to the sunlight sensor and plug the other end of the cable to any of the I2C plugs on the connector interface.
-Once everything is connected, you can power up the Raspberry Pi. If you see a blue LED on the connector interface it shows that the connector interface is connected.
+<br/><img src="https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Setup.png?raw=true" height="350">
+2. Boot your Raspberry Pi and open terminal.
+3. 
 
 ### Soldering
 1. Make sure to break the 7 pins from the Break Away Header. Then start by soldering the sensor to the pins of the header. 
