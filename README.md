@@ -37,6 +37,9 @@ SparkFun Air Quality Breakout - CCS811                                          
 ### Time Commitment
 
 ### Raspberry Pi Configuration
+1. Create your Raspberry Pi's [image](https://github.com/six0four/StudentSenseHat/blob/master/cribpisdcard.md) for your project.
+
+2. Then test your LED to [blink](https://github.com/six0four/StudentSenseHat/blob/master/README.md#student-raspberry-pi-image-creation-and-test-code).
 
 ### Mechanical Assembly
 
