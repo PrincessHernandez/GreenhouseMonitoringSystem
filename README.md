@@ -25,8 +25,8 @@ The Greenhouse Monitoring System is a device that allows greenhouse technicians
 Description                                                                     |Source      |Part #      |$CAD Price|$USD Price|Link
 --------------------------------------------------------------------------------|:----------:|:----------:|:--------:|:--------:|------
 SparkFun Air Quality Breakout - CCS811                                          | Sparkfun   | SEN-14193  |          | $20.95   | https://www.sparkfun.com/products/14193?_ga=2.97662492.2095878335.1537831851
-AM2315 - Encased I2C Temperature/Humidity Sensor                                |      X     |            |          |          | https://www.adafruit.com/product/1293
-OLED Display for Arduino 128x64 Pixel I2C, 0.96 inch, SSD1306, Library, 3-5V    |      X     |            |          |          | https://www.amazon.ca/Display-Arduino-128x64-SSD1306-Library/dp/B077D4RQG1/ref=sr_1_1_sspa?hvadid=324955435621&hvdev=c&hvlocphy=9000993&hvnetw=g&hvpos=1t1&hvqmt=b&hvrand=7609421822030419687&hvtargid=kwd-45652301614&keywords=oled+ssd1306&qid=1551449756&s=electronics&sr=1-1-spons&tag=googcana-20&psc=1
+AM2315 - Encased I2C Temperature/Humidity Sensor                                | Adafruit   |            |          |          | https://www.adafruit.com/product/1293
+OLED Display for Arduino 128x64 Pixel I2C, 0.96 inch, SSD1306, Library, 3-5V    | Amazon     |            |          |          | https://www.amazon.ca/Display-Arduino-128x64-SSD1306-Library/dp/B077D4RQG1/ref=sr_1_1_sspa?hvadid=324955435621&hvdev=c&hvlocphy=9000993&hvnetw=g&hvpos=1t1&hvqmt=b&hvrand=7609421822030419687&hvtargid=kwd-45652301614&keywords=oled+ssd1306&qid=1551449756&s=electronics&sr=1-1-spons&tag=googcana-20&psc=1
                                                       |      X     |            |          |          | 
 
 ### Time Commitment
