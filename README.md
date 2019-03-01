@@ -8,8 +8,8 @@
 5. [Raspberry Pi Configuration](#raspberry-pi-configuration)
 6. [Mechanical Assembly](#mechanical-assembly)
 7. [Soldering](#soldering)
-8. [I2C Detection](#i2c-detection)
-9. [Power Up](#power-up)
+8. [Power Up](#power-up)
+9. [I2C Detection](#i2c-detection)
 10. [Unit Testing](#unit-testing)
 11. [Production Testing](#production-testing)
 12. [Reproducible?](#reproducible)
@@ -75,6 +75,8 @@ SparkFun Air Quality Breakout - CCS811                                          
 Once you have finished soldering, your board should look like this along with the sensor:
 <br/><img src="" height="350">
 
+### Power Up
+
 ### I2C Detection
 To check if the board is functioning and detecting the sensor, open terminal and type
 ```
@@ -85,8 +87,6 @@ This will display an output of the sensor's address - 0x3B, 0x5B. See sample out
 
 To wake up AM2315 Temp/Humid sensor, run the command again. It will show all addresses - 0x3B, 0x5B, 0x5C. 
 ![Image of i2cdetection2]()
-
-### Power Up
 
 ### Unit Testing
 
