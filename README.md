@@ -42,8 +42,40 @@ SparkFun Air Quality Breakout - CCS811                                          
 2. Then test your LED to [blink](https://github.com/six0four/StudentSenseHat/blob/master/README.md#student-raspberry-pi-image-creation-and-test-code).
 
 ### Mechanical Assembly
+1. Connect your sensors to the appropriate GPIO pinout. The wiring should look something like this:
+![Image of ]
+3. Boot your Raspberry Pi and open terminal.
+. Next, will be connecting the connector interface to the Raspberry pi 3. While holding the connector interface, align the pins on the Raspberry Pi 3 GPIO header and carefully push down the connector interface board on to the Raspberry Pi 3 board.
+Then, plug in a Grove Cable that comes with the Grove Sunlight sensor to the sunlight sensor and plug the other end of the cable to any of the I2C plugs on the connector interface.
+Once everything is connected, you can power up the Raspberry Pi. If you see a blue LED on the connector interface it shows that the connector interface is connected.
 
 ### Soldering
+1. Make sure to break the 7 pins from the Break Away Header. Then start by soldering the sensor to the pins of the header. 
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/Soldering%20Sensor%20to%20Header.jpg" width="350">
+
+2. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or my version of the [fritzing file](https://github.com/PrincessHernandez/VOC_Sensor/blob/master/documentation/Fritzing%20CCS811/VOC-CCS311-Princess.fzz). You can refer to the image of the schematic and PCB designs below.
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_schem.png" width="350"> <img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/VOC-CCS311-Princess_pcb.png" width="350">
+<br/>Here are the following pins that you should know for this project:
+##### Power Pins
+* Vin - power pin
+	* Since the sensor uses 3.3V, give it the same power as the logic level of you Raspberry Pi.
+* GND - common ground for power and logic
+##### Logic Pins
+* SCL - i2c clock pin
+	* Connect to your Raspberry Pi i2c clock line.
+* SDA - i2c data pin
+	* Connect to your Raspberry Pi i2c data line.
+* WAKE\* - wakeup pin for the sensor
+	* Please make sure that the WAKE pin is connected to GND. Otherwise, you will not get an address.
+
+3. Once you have obtained your PCB board solder the following:
+* Vias\*
+* 40-pin socket 
+* 7-pin socket
+<br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
+
+Once you have finished soldering, your board should look like this along with the sensor:
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/VOC_Sensor/master/images/SolderedPCB.PNG" width="350">
 
 ### I2C Detection
 To check if the board is functioning and detecting the sensor, open terminal and type
