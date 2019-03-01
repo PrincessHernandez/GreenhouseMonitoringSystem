@@ -29,8 +29,8 @@ OLED Display for Arduino 128x64 Pixel I2C, 0.96 inch, SSD1306, Library, 3-5V    
 20-pin Header (Female)                                                          | Amazon     |            | $9.99    |          | https://www.amazon.ca/2x20-pin-Female-Stacking-Header-Raspberry/dp/B071FT161B/ref=sr_1_3?crid=SKA71RFLSHC5&keywords=20+pin+header+female&qid=1551450588&s=electronics&sprefix=20+pin+header%2Celectronics%2C149&sr=1-3
 5-pin Header (Female)                                                           | Amazon     |            | $        |          | https://www.amazon.ca/2x20-pin-Female-Stacking-Header-Raspberry/dp/B071FT161B/ref=sr_1_3?crid=SKA71RFLSHC5&keywords=20+pin+header+female&qid=1551450588&s=electronics&sprefix=20+pin+header%2Celectronics%2C149&sr=1-3
 4-pin Header (Female)                                                           | Amazon     |            | $        |          | https://www.amazon.ca/2x20-pin-Female-Stacking-Header-Raspberry/dp/B071FT161B/ref=sr_1_3?crid=SKA71RFLSHC5&keywords=20+pin+header+female&qid=1551450588&s=electronics&sprefix=20+pin+header%2Celectronics%2C149&sr=1-3
-SparkFun Air Quality Breakout - CCS811                                          | Sparkfun   | SEN-14193  |          | $20.95   | https://www.sparkfun.com/products/14193?_ga=2.97662492.2095878335.1537831851
 AM2315 - Encased I2C Temperature/Humidity Sensor                                | Adafruit   |            |          | $29.95   | https://www.adafruit.com/product/1293
+SparkFun Air Quality Breakout - CCS811                                          | Sparkfun   | SEN-14193  |          | $20.95   | https://www.sparkfun.com/products/14193?_ga=2.97662492.2095878335.1537831851
 
                                                        
 ### Time Commitment
