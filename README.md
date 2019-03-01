@@ -22,18 +22,12 @@ The Greenhouse Monitoring System is a device that allows greenhouse technicians
 ![Image of System Diagram](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Sys%20Diagram.png?raw=true)
 
 ### Material Requirements and Budget
-MCU         |Tested Works|Doesn't Work|Not Tested|Notes
-------------|:----------:|:----------:|:--------:|-----
-Atmega328   |      X     |            |          |
-Atmega32u4  |      X     |            |          |
-Atmega2560  |      X     |            |          |
-ESP8266     |      X     |            |          | Change OLED_RESET to different pin if using default I2C pins D4/D5.
-ESP32       |      X     |            |          |
-ATSAM3X8E   |      X     |            |          |
-ATSAM21D    |      X     |            |          |
-Intel Curie |      X     |            |          |
-WICED       |      X     |            |          | No hardware SPI - bitbang only
-ATtiny85    |            |      X     |          |
+Description                              |Source      |Part #      |$CAD Price|$USD Price|Link
+-----------------------------------------|:----------:|:----------:|:--------:|:--------:|------
+SparkFun Air Quality Breakout - CCS811   | Sparkfun   | SEN-14193  |          |          |
+                                         |      X     |            |          |          |
+                                         |      X     |            |          |          |
+                                         |      X     |            |          |          | 
 
 ### Time Commitment
 
