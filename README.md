@@ -32,6 +32,12 @@ The Greenhouse Monitoring System is a device that allows greenhouse technicians
 ### Soldering
 
 ### I2C Detection
+To check if the board is functioning and detecting the sensor, open terminal and type
+```
+sudo i2cdetect -y 1
+```
+This will display an output of the sensor's address - 0x5B. See sample output below:
+![Image of i2cdetection]()
 
 ### Power Up
 
