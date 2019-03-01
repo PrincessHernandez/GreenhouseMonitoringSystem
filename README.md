@@ -49,7 +49,7 @@ SparkFun Air Quality Breakout - CCS811                                          
 
 ### Soldering
 1. You can design your own PCB using [Fritzing software](http://fritzing.org/download/) for free or our version of the [fritzing file](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Fritzing/Greenhouse.fzz). You can refer to the image of the schematic and PCB designs below.
-<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_schem.png" width="650"> <img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_pcb.png" width="650">
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_schem.png" width="450"> <img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_pcb.png" width="450">
 <br/>Here are the following pins that you should know for this project:
 ##### Power Pins
 * Vin - power pin
