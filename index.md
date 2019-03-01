@@ -7,6 +7,9 @@ title: Project Blog
 
 # Greenhouse Monitoring System
 
+### Week 7 February 28, 2019
+* Our [status report]() is due.
+
 ### Reading Week
 * Group Meeting
 * Working on the application
