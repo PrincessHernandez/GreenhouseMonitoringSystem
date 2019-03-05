@@ -93,6 +93,11 @@ To wake up AM2315 Temp/Humid sensor, run the command again. It will show all add
 ![Image of i2cdetection2]()
 
 ### Unit Testing
+Now that you've downloaded the codes and detected your sensors, go to terminal and run
+```
+python greenhouse.py
+```
+
 
 ### Production Testing
 
