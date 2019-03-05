@@ -1,0 +1,16 @@
+# This code should be used with every script that you will be using to connect to the Firebase database.
+import pyrebase
+from firebase import firebase
+config = {
+  # You can get all these info from the firebase website. It's associated with your account.
+  "apiKey": "AIzaSyA3SmPEZdgyxWIcENXi1V098gof4MvAdSI",
+  "authDomain": "greenhouseproject-58231.firebaseapp.com",
+  "databaseURL": "https://greenhouseproject-58231.firebaseio.com",
+  "storageBucket": "greenhouseproject-58231.appspot.com"
+}
+
+firebase = pyrebase.initialize_app(config)
+.
+.
+.
+.
