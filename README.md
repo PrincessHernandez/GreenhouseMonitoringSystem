@@ -97,7 +97,8 @@ Now that you've downloaded the codes and detected your sensors, go to terminal a
 ```
 python greenhouse.py
 ```
-
+This command should run the program and display on the terminal. An example output shown below:
+![Image of Sample Output]()
 
 ### Production Testing
 
