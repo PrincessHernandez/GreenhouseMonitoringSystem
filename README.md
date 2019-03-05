@@ -15,7 +15,7 @@
 12. [Reproducible?](#reproducible)
 
 ### Introduction
-The Greenhouse Monitoring System is a device that allows greenhouse technicians to monitor atmospheric factors that may affect plant growth. The integration of this device 
+The Greenhouse Monitoring System is a device that allows greenhouse technicians to monitor atmospheric factors that may affect plant growth. The temp/humid sensor measures temperature and humidity respectively, while the VOC sensor can measure equivalent CO2. These three factors can have an impact in plants whether they are growing at a normal or slow pace. To increase awareness, our monitoring system  
 
 ### System Diagram
 ![Image of System Diagram](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Sys%20Diagram.png?raw=true)
