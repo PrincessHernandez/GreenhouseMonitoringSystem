@@ -109,7 +109,3 @@ This command should run the program and display the output on the OLED screen. A
 
 ### Reproducible
 You are now ready to conduct experiments with your device. \*We highly recommend you test in greenhouses for its sole purpose.
-
-AM2315 - Temperature/Humidity
-</br>CCS811 - VOC
-</br>SSD1306 - OLED
