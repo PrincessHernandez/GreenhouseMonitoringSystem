@@ -8,7 +8,7 @@ title: Project Blog
 # Greenhouse Monitoring System
 
 ### Week 8 March 7, 2019
-Check out our [README.md](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/README.md).
+* Check out our [README.md](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/README.md).
 
 ### Week 7 February 28, 2019
 * Our [status report](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/documentation/Status%20Updates/Status%20Update%20(Week%207).pdf) is due.
