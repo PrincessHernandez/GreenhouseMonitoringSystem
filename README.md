@@ -1,6 +1,6 @@
 # Build Instructions for Greenhouse Monitoring System
 
-## Table of Contents
+### Table of Contents
 1. [Introduction](#introduction)
 2. [System Diagram](#system-diagram)
 3. [Material Requirements and Budget](#material-requirements-and-Budget)
