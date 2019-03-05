@@ -71,16 +71,16 @@ This project can be completed in approximately 7 days if you followed the mechan
 	* Please make sure that the WAKE pin is connected to GND. Otherwise, you will not get the address for CCS811 sensor.
 
 3. Once you have obtained your PCB board solder the following:
-* Vias\*
+* Vias\*</br>
 ![Image of Vias Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
-* 20x2-pin socket 
+* 20x2-pin socket<br/>
 ![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
-* 4 and 5-pin sockets
+* 4 and 5-pin sockets <br/>
 ![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 
 Once you have finished soldering, your board should look like this along with the sensor:
-<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png" height="350">
+<br/>![Image of Board Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 
 ### Power Up
 1. Boot your Raspberry Pi and open terminal.
