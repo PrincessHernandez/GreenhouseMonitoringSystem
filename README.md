@@ -92,17 +92,17 @@ To wake up AM2315 Temp/Humid sensor, run the command again. It will show all add
 ![Image of i2cdetection2](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/i2cdetect2.PNG)
 
 ### Unit Testing
-Now that you've downloaded the codes and detected your sensors, go to terminal and run
+Download the program [greenhouse.py](). Now that you've downloaded the codes and detected your sensors, go to terminal and run
 ```
-python greenhouse.py
+sudo python greenhouse.py
 ```
 This command should run the program and display on the terminal. An example output is shown below:
 ![Image of Sample Output Terminal](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/SampleOutput.PNG)
 
 ### Production Testing
-Now that you've seen what the sensors' output will look like, run
+Now that you've seen what the sensors' output will look like, download the program [greenhouse2.py]() and run
 ```
-python greenhouse2.py
+sudo python greenhouse2.py
 ```
 This command should run the program and display the output on the OLED screen. An example output is shown below:
 ![Image of Sample Output OLED]()
