@@ -88,7 +88,7 @@ sudo i2cdetect -y 1
 This will display an output of the sensor's address - 0x3C, 0x5B. See sample output below:
 ![Image of i2cdetection](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/i2cdetect.PNG)
 
-To wake up AM2315 Temp/Humid sensor, run the command again. It will show all addresses - 0x3C, 0x5B, 0x5C. 
+To wake up AM2315 Temp/Humid sensor, run the command again. You must run this command quick after the previous. It will show all addresses - 0x3C, 0x5B, 0x5C. 
 ![Image of i2cdetection2](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/i2cdetect2.PNG)
 
 ### Unit Testing
