@@ -13,7 +13,6 @@
 10. [Unit Testing](#unit-testing)
 11. [Production Testing](#production-testing)
 12. [Reproducible?](#reproducible)
-13. [Explore with your Sensor](#explore-with-your-sensor)
 
 ### Introduction
 The Greenhouse Monitoring System is a device that allows greenhouse technicians to monitor atmospheric factors that may affect plant growth.
@@ -97,14 +96,18 @@ Now that you've downloaded the codes and detected your sensors, go to terminal a
 ```
 python greenhouse.py
 ```
-This command should run the program and display on the terminal. An example output shown below:
-![Image of Sample Output](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/SampleOutput.PNG)
+This command should run the program and display on the terminal. An example output is shown below:
+![Image of Sample Output Terminal](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/SampleOutput.PNG)
 
 ### Production Testing
+Now that you've seen what the sensors' output will look like, run
+```
+python greenhouse2.py
+```
+This command should run the program and display the output on the OLED screen. An example output is shown below:
+![Image of Sample Output OLED]()
 
 ### Reproducible
-
-### Explore with your device
 You are now ready to conduct experiments with your device. \*We highly recommend you test in greenhouses for great results.
 
 AM2315 - Temperature/Humidity
