@@ -72,15 +72,15 @@ This project can be completed in approximately 7 days if you followed the mechan
 
 3. Once you have obtained your PCB board solder the following:
 * Vias\*
-![Image of Vias Soldered]()
+![Image of Vias Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
 * 20x2-pin socket 
-![Image of 40 pin Soldered]()
+![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 * 4 and 5-pin sockets
-![Image of sockets Soldered]()
+![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 
 Once you have finished soldering, your board should look like this along with the sensor:
-<br/><img src="" height="350">
+<br/><img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png" height="350">
 
 ### Power Up
 1. Boot your Raspberry Pi and open terminal.
@@ -112,7 +112,7 @@ Now that you've seen what the sensors' output will look like, download the progr
 sudo python greenhouse2.py
 ```
 This command should run the program and display the output on the OLED screen. An example output is shown below:
-![Image of Sample Output OLED]()
+![Image of Sample Output OLED](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 
 ### Reproducible
 You are now ready to conduct experiments with your device. \*We highly recommend you test in greenhouses for its sole purpose.
