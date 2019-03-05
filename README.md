@@ -56,10 +56,12 @@ This project can be completed in approximately 7 days if you followed the mechan
 <br/>PCB view
 <img src="https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Greenhouse_pcb.png" width="650">
 <br/>Here are the following pins that you should know for this project:
+
 ##### Power Pins
 * Vin - power pin
 	* Since the sensor uses 3.3V, give it the same power as the logic level of you Raspberry Pi.
 * GND - common ground for power and logic
+
 ##### Logic Pins
 * SCL - i2c clock pin
 	* Connect to your Raspberry Pi i2c clock line.
