@@ -15,7 +15,7 @@
 12. [Reproducible?](#reproducible)
 
 ### Introduction
-The Greenhouse Monitoring System is a device that allows greenhouse technicians to monitor atmospheric factors that may affect plant growth.
+The Greenhouse Monitoring System is a device that allows greenhouse technicians to monitor atmospheric factors that may affect plant growth. The integration of this device 
 
 ### System Diagram
 ![Image of System Diagram](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/images/Sys%20Diagram.png?raw=true)
