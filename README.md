@@ -75,7 +75,7 @@ This project can be completed in approximately 7 days if you followed the mechan
 ![Image of Vias Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Vias.png)
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
 * 20x2-pin socket<br/>
-![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
+![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/40pin.png)
 * 4 and 5-pin sockets <br/>
 ![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
 
