@@ -112,7 +112,7 @@ Now that you've seen what the sensors' output will look like, download the progr
 sudo python greenhouse2.py
 ```
 This command should run the program and display the output on the OLED screen. An example output is shown below:
-![Image of Sample Output OLED](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
+![Image of Sample Output OLED](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/OLED%20Output.png)
 
 ### Reproducible
 You are now ready to conduct experiments with your device. \*We highly recommend you test in greenhouses for its sole purpose.
