@@ -72,7 +72,7 @@ This project can be completed in approximately 7 days if you followed the mechan
 
 3. Once you have obtained your PCB board solder the following:
 * Vias\*</br>
-![Image of Vias Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
+![Image of Vias Soldered]https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/Vias.png)
 <br/>\*Note: You must thread a single strand of wire through the holes, solder it, and then cut the remaining wires off.
 * 20x2-pin socket<br/>
 ![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
