@@ -5,11 +5,14 @@
 # July, 11 2017
 #
 # Version 1.0
+#
+#
+## Edited by Princess Hernandez 
 
 import struct, array, time, io, fcntl
 
 # I2C Address
-CCS811_ADDRESS =  (0x5A)
+CCS811_ADDRESS =  (0x5B)
 
 # Registers
 CCS811_HW_ID            =  (0x20)
@@ -134,16 +137,18 @@ class CCS811_RPi:
                 data = CCS811_fr.read(8)
                 buf = array.array('B', data)
                 result = {}
+		#removed the "return False" at the end of if statements because it breaks the app.
+				
                 # Read eCO2 value and check if it is valid
                 result['eCO2'] = buf[0]*256 + buf[1]
                 if(result['eCO2'] > 8192):
-                        print 'Invalid eCO2 value'
-                        return False
+                         print 'Invalid eCO2 value'
+                  #      return False
                 # Read TVOC value and check if it is valid
-                result['TVOC'] = buf[2]*256 + buf[3]
-                if(result['TVOC'] > 1187):
-                        print 'Invalid TVOC value'
-                        return False
+                #result['TVOC'] = buf[2]*256 + buf[3]
+                #if(result['TVOC'] > 1187):
+                 #       print 'Invalid TVOC value'
+                  #      return False
                 
                 result['status'] = buf[4]
 
@@ -151,7 +156,7 @@ class CCS811_RPi:
                 result['errorid'] = buf[5]
                 if(result['errorid'] > 5):
                         print 'Invalid Error ID'
-                        return False
+                    #   return False
                         
                 result['raw'] = buf[6]*256 + buf[7]
                 return result
