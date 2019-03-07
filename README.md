@@ -80,7 +80,7 @@ This project can be completed in approximately 7 days if you followed the mechan
 ![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/4-5pin.png)
 
 Once you have finished soldering, your board should look like this along with the sensor:
-<br/>![Image of Board Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
+<br/>![Image of Board Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/PCB%20Soldered.png)
 
 ### Power Up
 1. Boot your Raspberry Pi and open terminal.
