@@ -85,7 +85,7 @@ Once you have finished soldering, your board should look like this along with th
 ### Power Up
 1. Boot your Raspberry Pi and open terminal.
 2. To check if your sensors are functioning, click [here](#i2c-detection). If they are not being detected, there might be a problem with the solder or the PCB itself.
-3. Download the following codes here to setup your sensors: [CCS811](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/python%20script/classes/CCS811_RPi.py) and [SSD1306]().
+3. Download the following codes here to setup your sensors: [CCS811](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/python%20script/classes/CCS811_RPi.py) and [SSD1306](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/python%20script/classes/SSD1306.py).
 
 ### I2C Detection
 To check if the board is functioning and detecting the sensor, open terminal and type
