@@ -77,7 +77,7 @@ This project can be completed in approximately 7 days if you followed the mechan
 * 20x2-pin socket<br/>
 ![Image of 40 pin Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/40pin.png)
 * 4 and 5-pin sockets <br/>
-![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
+![Image of sockets Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/4-5pin.png)
 
 Once you have finished soldering, your board should look like this along with the sensor:
 <br/>![Image of Board Soldered](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/imagehere.png)
