@@ -107,7 +107,7 @@ This command should run the program and display on the terminal. An example outp
 ![Image of Sample Output Terminal](https://raw.githubusercontent.com/PrincessHernandez/GreenhouseMonitoringSystem/master/images/SampleOutput.PNG)
 
 ### Production Testing
-Now that you've seen what the sensors' output will look like, download the program [greenhouse2.py]() and run
+Now that you've seen what the sensors' output will look like, download the program [greenhouse2.py](https://github.com/PrincessHernandez/GreenhouseMonitoringSystem/blob/master/python%20script/greenhouse2.py) and run
 ```
 sudo python greenhouse2.py
 ```
