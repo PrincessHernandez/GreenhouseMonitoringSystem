@@ -1,6 +1,5 @@
 package com.greenhouseproject;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,11 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,54 +27,66 @@ import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-public class HistoryFragment extends Fragment{
+public class eCO2Fragment extends Fragment{
     View myView;
 
-    String gas_n[] = {"temp", "co2", "humid"};
+    String gas_n = "eCO2";
+
+    String[] mobileArray = {"15","18", "14"};
+
+    //ArrayAdapter adapter;
+    private ListView listView;
 
     FirebaseDatabase database;
     DatabaseReference ref;
     String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
     GraphView graphView;
-    LineGraphSeries series[] = {new LineGraphSeries(), new LineGraphSeries(), new LineGraphSeries()};
+    LineGraphSeries series = new LineGraphSeries();
 
     FirebaseUser authData = FirebaseAuth.getInstance().getCurrentUser() ;
     SimpleDateFormat sdf = new SimpleDateFormat("MMM d\nHH:mm");
     // HH:mm:ss or
 
+    private ArrayList<String> list = new ArrayList<String>();
+    private ArrayAdapter<String> adapter;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.activity_history, container, false);
+        myView = inflater.inflate(R.layout.fragment_e_co2, container, false);
 
         graphView = (GraphView) myView.findViewById(R.id.graph);
 
-        for (int i=0; i < 3; i++) {
-            graphView.addSeries(series[i]);
-            series[i].setTitle(gas_n[i]);
-        }
-        series[1].setColor(Color.GREEN);
-        series[2].setColor(Color.RED);
-        //series[3].setColor(Color.MAGENTA);
+        graphView.addSeries(series);
+        series.setTitle(gas_n);
+
+
+        adapter = new ArrayAdapter<String>(getActivity(),
+                R.layout.activity_listview, list);
+        adapter.notifyDataSetChanged();
+        listView = (ListView) myView.findViewById(R.id.listViewECO2);
+
+
 
         // legend
         graphView.getLegendRenderer().setVisible(true);
         graphView.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.BOTTOM);
 
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("Current Data");
+        ref = database.getReference("Data");
 
         graphView.getGridLabelRenderer().setLabelFormatter(new DefaultLabelFormatter()
         {
             @Override
             public String formatLabel(double value, boolean isValueX) {
                 if(isValueX) {
-                    return  sdf.format(new Date((long) value));
+                    return  sdf.format(new Date((long) value * 1000));
                 }
                 return super.formatLabel(value, isValueX);
             }
         });
+
 
         //setListeners();
 
@@ -85,25 +96,41 @@ public class HistoryFragment extends Fragment{
     @Override
     public void onStart() {
         super.onStart();
-        ref.child(userid).addValueEventListener(new ValueEventListener() {
+        ref.child("pi").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                DataPoint[][] dp = new DataPoint[3][(int) dataSnapshot.getChildrenCount()];
-
+                DataPoint[] dp = new DataPoint[(int) dataSnapshot.getChildrenCount()];
                 int index = 0;
-                for(DataSnapshot myDataSnapshot : dataSnapshot.getChildren()){
-                    DataValue dataValue = myDataSnapshot.getValue(DataValue.class);
-                    int ValArr[] = {dataValue.getTempValue(),dataValue.getCo2Value(),dataValue.getHumidityValue()};
 
-                    for (int i=0; i < 3; i++) {
-                        dp[i][index] = new DataPoint(dataValue.getDate(),ValArr[i]);
+                listView.setAdapter(adapter);
+                list.clear();
+
+                for(DataSnapshot myDataSnapshot : dataSnapshot.getChildren()){
+                    int eco2;
+                    String seconds;
+                    try {
+                        eco2 = myDataSnapshot.child("eC02/eCO2").getValue(int.class);
+                        seconds = myDataSnapshot.child("seconds").getValue(String.class);
+
+                    } catch (NullPointerException e) {
+                        eco2 = 0;
+                        seconds = "1550000000";
                     }
+
+                    //Data dataValue = myDataSnapshot.getValue(Data.class);
+                    //Data myCO2Value = myDataSnapshot.child("eC02").getValue(Data.class);
+
+                    dp[index] = new DataPoint(Double.parseDouble(seconds) ,eco2);
+
+                    list.add(String.valueOf(eco2));
+
+                    //dp[index] = new DataPoint(index+1,(int) dataValue.getHumidity());
+
                     index++;
                 }
 
-                for (int i=0; i < 3; i++) {
-                    series[i].resetData(dp[i]);
-                }
+
+                series.resetData(dp);
             }
 
             @Override

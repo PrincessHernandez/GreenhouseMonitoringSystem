@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class DataValue {
     int tempValue, co2Value, humidityValue;
+    float Temperature, Humidity;
     Date date = new Date();
     //Long timestamp;
 
@@ -16,6 +17,7 @@ public class DataValue {
         this.co2Value = co2Value;
         this.humidityValue = humidityValue;
 
+        //this.temperature = temperature;
         //this.timestamp = System.currentTimeMillis();
         this.date.getTime();
     }
@@ -35,6 +37,10 @@ public class DataValue {
     public int getHumidityValue() {
         return humidityValue;
     }
+
+    public float getTemperature() { return Temperature; }
+
+    public float getHumidity() { return Humidity; }
 
     public Date getDate() { return  date; }
 }

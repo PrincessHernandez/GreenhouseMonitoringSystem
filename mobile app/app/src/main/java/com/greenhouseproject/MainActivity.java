@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,10 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -49,8 +54,24 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //navigationView.setNavigationItemSelectedListener(this);
+
+        FirebaseAuth firebaseauth = FirebaseAuth.getInstance();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);   //displays text of header of nav drawer.
         navigationView.setNavigationItemSelectedListener(this);
+        View headerview = navigationView.getHeaderView(0);
+
+        TextView tt1 = (TextView) headerview.findViewById(R.id.textview_username);
+        tt1.setText(firebaseauth.getCurrentUser().getDisplayName());//username of logged in user.
+
+        TextView tt = (TextView) headerview.findViewById(R.id.textView_emailid);
+        tt.setText(firebaseauth.getCurrentUser().getEmail());    //email id of logged in user.
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, new SummaryFragment()).commit();
     }
 
     private void setupFirebaseListener() {
@@ -132,10 +153,18 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new SummaryFragment())
                     .commit();
-
-        } else if (id == R.id.nav_history) {
+        } else if (id == R.id.nav_humidity) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new HistoryFragment())
+                    .replace(R.id.content_frame, new HumidityFragment())
+                    .commit();
+        } else if (id == R.id.nav_temperature) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new TemperatureFragment())
+                    .commit();
+
+        } else if (id == R.id.nav_eco2) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new eCO2Fragment())
                     .commit();
 
     //    } else if (id == R.id.nav_slideshow) {

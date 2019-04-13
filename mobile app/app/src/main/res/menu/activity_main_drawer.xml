@@ -9,13 +9,17 @@
             android:icon="@drawable/ic_menu_summary"
             android:title="Summary" />
         <item
-            android:id="@+id/nav_history"
+            android:id="@+id/nav_humidity"
             android:icon="@drawable/ic_menu_history"
-            android:title="History" />
+            android:title="Humidity History" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_temperature"
+            android:icon="@drawable/ic_menu_history"
+            android:title="Temperature History" />
+        <item
+            android:id="@+id/nav_eco2"
+            android:icon="@drawable/ic_menu_history"
+            android:title="eCO2 History" />
     </group>
 
     <item android:title="Others">

@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Air Safety Monitor Login"
+        android:text="GreenHouse Project Login"
         android:gravity="center"
         android:textAllCaps="true"
         android:textSize="16sp"

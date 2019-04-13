@@ -6,29 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <lecho.lib.hellocharts.view.PieChartView
-        android:id="@+id/chart_temp"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="75dp" />
-
-    <lecho.lib.hellocharts.view.PieChartView
-        android:id="@+id/chart_co2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_alignStart="@+id/chart_temp"
-        android:layout_below="@+id/chart_temp" />
-
-    <lecho.lib.hellocharts.view.PieChartView
-        android:id="@+id/chart_humid"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_alignStart="@+id/chart_temp"
-        android:layout_below="@+id/chart_co2" />
-
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,50 +22,68 @@
         android:text="Current Data"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/tempVal"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="10dp"
-        android:ems="10"
-        android:hint="temp"
-        android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/co2Val"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="90dp"
-        android:ems="10"
-        android:hint="co2"
-        android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/humidVal"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="170dp"
-        android:ems="10"
-        android:hint="humid"
-        android:inputType="numberDecimal" />
-
-    <Button
-        android:id="@+id/btn_current_data"
+    <TextView
+        android:id="@+id/textViewStat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="21dp"
-        android:layout_marginEnd="14dp"
-        android:text="C Data" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Normal"
+        android:textSize="25sp" />
+
+
+    <ImageView
+        android:id="@+id/imageTemp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="125dp"
+        app:srcCompat="@drawable/temperature" />
+
+    <ImageView
+        android:id="@+id/imageHumid"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/imageTemp"
+        android:layout_below="@+id/imageTemp"
+        app:srcCompat="@drawable/drop" />
+
+    <ImageView
+        android:id="@+id/imageCarbon2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/imageTemp"
+        android:layout_below="@+id/imageHumid"
+        app:srcCompat="@drawable/carbondioxide" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageTemp"
+        android:layout_toEndOf="@+id/imageTemp"
+        android:text="Temp: "
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textViewHumid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageHumid"
+        android:layout_toEndOf="@+id/imageTemp"
+        android:text="Humidity: "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewCo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageCarbon2"
+        android:layout_toEndOf="@+id/imageTemp"
+        android:text="Co2: "
+        android:textSize="25dp" />
 
 </RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="401dp"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textTitleE"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textTitleE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="eCO2"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/listViewECO2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/graph" />
+
+</RelativeLayout>
