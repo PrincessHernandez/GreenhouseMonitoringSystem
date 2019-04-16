@@ -1,3 +1,4 @@
+import datetime
 import time
 from tentacle_pi.AM2315 import AM2315
 from CCS811_RPi import CCS811_RPi
@@ -8,6 +9,16 @@ import Adafruit_SSD1306
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+cred = credentials.Certificate('/home/pi/GreenhouseMonitoringSystem/greenhouseproject.json')
+default_app = firebase_admin.initialize_app(cred, {
+    'databaseURL':'https://greenhouseproject-58231.firebaseio.com'
+})
+ref = db.reference('Data')
+
 
 am = AM2315(0x5c,"/dev/i2c-1")
 ccs811 = CCS811_RPi()
@@ -25,6 +36,14 @@ configuration = 0b100000
 
 # Set read interval for retriveving last measurement data from the sensor
 pause = 10
+
+hwid = ccs811.checkHWID()
+if(hwid == hex(129)):
+        print 'Hardware ID is correct'
+else: print 'Incorrect hardware ID ' ,hwid, ', should be 0x5B'
+
+ccs811.configureSensor(configuration)
+print '--------------------------------'
 
 # Raspberry Pi pin configuration:
 RST = 24
@@ -65,11 +84,28 @@ x = 0
 
 # Load default font.
 font = ImageFont.load_default()
-
+user_ref = ref.child('users')
+user_ref.set({
+    'pi':{
+        'full_name' : 'Raspberry Pi',
+        'Temperature' : '0',
+        'Humidity' : '0',
+        'eC02' : '0'
+        }
+})
 while True:
+    epochtime = time.time()
+    localtime = epochtime - 240 #coverts UTC to UTC-4
     temperature, humidity, crc_check = am.sense()
     result = ccs811.readAlg();
-        
+    posts_ref = ref.child('pi')
+    new_post_ref = posts_ref.push()
+    new_post_ref.set({
+        'temperature' : temperature,
+        'humidity' : humidity,
+        'eC02' : result,
+        'seconds' : str(localtime),
+})
     #str_co2 = 'eCO2: ', result['eCO2'], ' ppm'
     #str_temp = 'temperature: %0.1f' % temperature
     #str_hum = 'humidity: %0.1f' % humidity
