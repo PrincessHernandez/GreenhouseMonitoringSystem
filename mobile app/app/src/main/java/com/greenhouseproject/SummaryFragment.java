@@ -129,6 +129,10 @@ public class SummaryFragment extends Fragment{
                     humidText.setText("Humidity: " + humid + "%");
                     co2Text.setText("Co2: " + eco2 + " ppm");
 
+                    if (eco2 > 8192){
+                        co2Text.setText("Co2: Invalid");
+                    }
+
                     if (temp == 0 && humid == 0 && eco2 == 0){
                         statText.setText("Database Error");
                         statText.setTextColor(Color.GRAY);

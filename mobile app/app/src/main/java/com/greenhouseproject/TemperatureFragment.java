@@ -51,6 +51,7 @@ public class TemperatureFragment extends Fragment{
 
     FirebaseUser authData = FirebaseAuth.getInstance().getCurrentUser() ;
     SimpleDateFormat sdf = new SimpleDateFormat("MMM d\nHH:mm");
+    SimpleDateFormat sdf2 = new SimpleDateFormat("\t\t\t\t MMM d HH:mm");
     // HH:mm:ss or
 
     private ArrayList<String> list = new ArrayList<String>();
@@ -118,10 +119,18 @@ public class TemperatureFragment extends Fragment{
                     } catch (NullPointerException e) {
                         temp = 0;
                         seconds = "1550000000";
+                    } catch (IllegalArgumentException e) {
+                        temp = 0;
+                        seconds = "1550000000";
                     }
 
                     dp[index] = new DataPoint(Double.parseDouble(seconds) ,temp);
-                    list.add(String.valueOf(temp));
+
+                    Long l_date = (long)Double.parseDouble(seconds);
+                    String mydate = sdf2.format(new Date((l_date * 1000)));
+
+                    list.add(String.valueOf(temp) + mydate);
+                    //list.add(String.valueOf(temp));
 
 
                     index++;

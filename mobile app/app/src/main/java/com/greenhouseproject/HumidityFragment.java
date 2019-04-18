@@ -45,6 +45,7 @@ public class HumidityFragment extends Fragment{
     FirebaseDatabase database;
     DatabaseReference ref;
     String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+    SimpleDateFormat sdf2 = new SimpleDateFormat("\t\t\t\t MMM d HH:mm");
 
     GraphView graphView;
     LineGraphSeries series = new LineGraphSeries();
@@ -120,10 +121,18 @@ public class HumidityFragment extends Fragment{
                     } catch (NullPointerException e) {
                         humid = 0;
                         seconds = "1550000000";
+                    } catch (IllegalArgumentException e) {
+                        humid = 0;
+                        seconds = "1550000000";
                     }
 
                     dp[index] = new DataPoint(Double.parseDouble(seconds) ,humid);
-                    list.add(String.valueOf(humid));
+
+                    Long l_date = (long)Double.parseDouble(seconds);
+                    String mydate = sdf2.format(new Date((l_date * 1000)));
+
+                    list.add(String.valueOf(humid) + mydate);
+                    //list.add(String.valueOf(humid));
 
                     index++;
                 }

@@ -170,11 +170,11 @@ public class MainActivity extends AppCompatActivity
     //    } else if (id == R.id.nav_slideshow) {
 
     //    } else if (id == R.id.nav_manage) {
-
+/*
         } else if (id == R.id.nav_settings) {
             Intent i = new Intent(this,SettingsActivity.class);
             startActivity(i);
-
+*/
         } else if (id == R.id.nav_sign_out) {
             Log.d(TAG, "onClick: attempting to sign out the user.");
             FirebaseAuth.getInstance().signOut();

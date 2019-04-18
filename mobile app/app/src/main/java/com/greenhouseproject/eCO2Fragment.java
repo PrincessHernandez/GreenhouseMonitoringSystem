@@ -1,5 +1,6 @@
 package com.greenhouseproject;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.widget.ListView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -46,6 +48,7 @@ public class eCO2Fragment extends Fragment{
 
     FirebaseUser authData = FirebaseAuth.getInstance().getCurrentUser() ;
     SimpleDateFormat sdf = new SimpleDateFormat("MMM d\nHH:mm");
+    SimpleDateFormat sdf2 = new SimpleDateFormat("\t\t\t\t MMM d HH:mm");
     // HH:mm:ss or
 
     private ArrayList<String> list = new ArrayList<String>();
@@ -61,7 +64,7 @@ public class eCO2Fragment extends Fragment{
         graphView.addSeries(series);
         series.setTitle(gas_n);
 
-
+        //final PackageManager packageManager = getActivity().getPackageManager();
         adapter = new ArrayAdapter<String>(getActivity(),
                 R.layout.activity_listview, list);
         adapter.notifyDataSetChanged();
@@ -115,6 +118,9 @@ public class eCO2Fragment extends Fragment{
                     } catch (NullPointerException e) {
                         eco2 = 0;
                         seconds = "1550000000";
+                    } catch (IllegalArgumentException e) {
+                        eco2 = 0;
+                        seconds = "1550000000";
                     }
 
                     //Data dataValue = myDataSnapshot.getValue(Data.class);
@@ -122,7 +128,10 @@ public class eCO2Fragment extends Fragment{
 
                     dp[index] = new DataPoint(Double.parseDouble(seconds) ,eco2);
 
-                    list.add(String.valueOf(eco2));
+                    Long l_date = (long)Double.parseDouble(seconds);
+                    String mydate = sdf2.format(new Date((l_date * 1000)));
+
+                    list.add(String.valueOf(eco2) + mydate);
 
                     //dp[index] = new DataPoint(index+1,(int) dataValue.getHumidity());
 

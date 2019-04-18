@@ -9,25 +9,27 @@
             android:icon="@drawable/ic_menu_summary"
             android:title="Summary" />
         <item
-            android:id="@+id/nav_humidity"
-            android:icon="@drawable/ic_menu_history"
-            android:title="Humidity History" />
-        <item
             android:id="@+id/nav_temperature"
-            android:icon="@drawable/ic_menu_history"
+            android:icon="@drawable/ic_thermometer"
             android:title="Temperature History" />
         <item
+            android:id="@+id/nav_humidity"
+            android:icon="@drawable/ic_humidity"
+            android:title="Humidity History" />
+        <item
             android:id="@+id/nav_eco2"
-            android:icon="@drawable/ic_menu_history"
+            android:icon="@drawable/ic_co2"
             android:title="eCO2 History" />
     </group>
 
     <item android:title="Others">
         <menu>
+            <!--
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_settings"
                 android:title="Settings" />
+                -->
             <item
                 android:id="@+id/nav_sign_out"
                 android:icon="@drawable/ic_menu_logout"
